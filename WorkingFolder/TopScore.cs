@@ -42,7 +42,7 @@ namespace Zirconium
 
         public static void OpenTopScoreList()
         {
-            //TODO: try - catch block
+
             using (StreamReader topScoreStreamReader = new StreamReader("..\\..\\TopScore.txt"))
             {
                 string line = topScoreStreamReader.ReadLine();

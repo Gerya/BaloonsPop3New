@@ -40,7 +40,15 @@ namespace Zirconium
 
             Console.WriteLine(gameBoard.ToString());
 
-            TopScore.OpenTopScoreList();
+            try
+            {
+                TopScore.OpenTopScoreList();
+            }
+            catch (Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
+            
             
             bool isCoordinates;
             Coordinates coordinates = new Coordinates();
