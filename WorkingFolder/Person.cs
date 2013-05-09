@@ -9,7 +9,7 @@ namespace Zirconium
     {
         string name;
         int score;
-
+        // Name Property
         public string Name
         {
             get
