@@ -58,9 +58,9 @@
       <Project>{bf3b4acf-cfdb-4f55-ba92-55c6ff600c76}</Project>
       <Name>BaloonsPopExceptions</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WorkingFolder\baloncheta.csproj">
+    <ProjectReference Include="..\WorkingFolder\BaloonsPop.csproj">
       <Project>{a1269ef5-33bd-4caa-927a-afa7c821b940}</Project>
-      <Name>baloncheta</Name>
+      <Name>BaloonsPop</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
