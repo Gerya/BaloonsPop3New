@@ -1,5 +1,5 @@
-1 . gery        -->  3 moves
-2 . kir4o       --> 25 moves
-3 . konstantin  --> 27 moves
-4 . natalya     --> 29 moves
-5 . test31      --> 31 moves
+1 . TestPlayer2  --> 29 moves
+2 . Gery        --> 31 moves
+3 . Natalya     --> 227 moves
+4 . Kiril       --> 229 moves
+5 . Konstantin  --> 245 moves

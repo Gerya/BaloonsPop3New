@@ -84,20 +84,29 @@ namespace Zirconium
             }
         }
 
-        public static void PrintScoreList()
+        private static string Renderer()
         {
-            Console.WriteLine("Scoreboard:");
+            StringBuilder result = new StringBuilder();
+            result.AppendLine("Scoreboard:");
             if (TopScoreList.Count > 0)
             {
                 for (int index = 0; index < TopScoreList.Count; index++)
                 {
-                    Console.WriteLine("{0} . {1,-10}  --> {2,2} moves", index + 1, TopScoreList[index].Name, TopScoreList[index].Score);
+                    result.AppendLine(string.Format("{0} . {1,-10}  --> {2,2} moves",
+                        index + 1, TopScoreList[index].Name, TopScoreList[index].Score));
                 }
             }
             else
             {
-                Console.WriteLine("Scoreboard is empty");
+                result.AppendLine("Scoreboard is empty");
             }
+
+            return result.ToString();
+        }
+
+        public static void PrintScoreList()
+        {
+            Console.WriteLine(TopScore.Renderer());
         }
     }
 }
