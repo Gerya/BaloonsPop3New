@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Zirconium
 {
-    internal static class TopScore
+    public static class TopScore
     {
         private const int MAX_TOP_SCORE_COUNT = 5;
         private static readonly List<Player> TopScoreList = new List<Player>();

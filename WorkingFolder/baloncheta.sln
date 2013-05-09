@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "baloncheta", "baloncheta.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaloonsPopExceptions", "..\BaloonsPopExceptions\BaloonsPopExceptions.csproj", "{BF3B4ACF-CFDB-4F55-BA92-55C6FF600C76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsBaloonPop3", "..\TestsBaloonPop3\TestsBaloonPop3.csproj", "{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,16 @@ Global
 		{BF3B4ACF-CFDB-4F55-BA92-55C6FF600C76}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{BF3B4ACF-CFDB-4F55-BA92-55C6FF600C76}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{BF3B4ACF-CFDB-4F55-BA92-55C6FF600C76}.Release|x86.ActiveCfg = Release|Any CPU
+		{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A53FB2F2-6E63-4FE4-BEE5-85FAAB1E88BD}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
