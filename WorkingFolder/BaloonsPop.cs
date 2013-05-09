@@ -108,7 +108,16 @@ namespace Zirconium
                 player.Name = Console.ReadLine();
                 TopScore.AddToTopScoreList(player);
             }
-            TopScore.SaveTopScoreList();
+
+            try
+            {
+                TopScore.SaveTopScoreList();
+            }
+            catch (Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
+            
             TopScore.PrintScoreList();
         }
     }

@@ -70,7 +70,7 @@ namespace Zirconium
             if (TopScoreList.Count > 0)
             {
                 StringBuilder toWriteInFile = new StringBuilder();
-                //TODO: try - catch block
+
                 using (StreamWriter topScoreStreamReader = new StreamWriter("..\\..\\TopScore.txt"))
                 {
                     for (int index = 0; index < TopScoreList.Count; index++)
