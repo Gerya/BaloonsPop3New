@@ -4,7 +4,7 @@ using System.Linq;
 namespace Zirconium
 {
     internal struct Coordinates
-    {
+    { // ala balaaaaaa
         private int col;
         private int row;
 
