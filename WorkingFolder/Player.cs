@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Zirconium
 {
-    internal class Player : IComparable
+    public class Player : IComparable
     {
         public string Name
         {
@@ -16,7 +16,7 @@ namespace Zirconium
             get;
             set;
         }
-        //TODO: check if used anywhere
+
         public static bool operator <(Player firstPlayer, Player secondPlayer)
         {
             return firstPlayer.Score < secondPlayer.Score;

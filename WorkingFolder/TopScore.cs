@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Zirconium
 {
-    internal static class TopScore
+    public static class TopScore
     {
         private const int MAX_TOP_SCORE_COUNT = 5;
         private static readonly List<Player> TopScoreList = new List<Player>();
@@ -42,7 +42,7 @@ namespace Zirconium
 
         public static void OpenTopScoreList()
         {
-            //TODO: try - catch block
+
             using (StreamReader topScoreStreamReader = new StreamReader("..\\..\\TopScore.txt"))
             {
                 string line = topScoreStreamReader.ReadLine();
@@ -70,7 +70,7 @@ namespace Zirconium
             if (TopScoreList.Count > 0)
             {
                 StringBuilder toWriteInFile = new StringBuilder();
-                //TODO: try - catch block
+
                 using (StreamWriter topScoreStreamReader = new StreamWriter("..\\..\\TopScore.txt"))
                 {
                     for (int index = 0; index < TopScoreList.Count; index++)
@@ -84,20 +84,29 @@ namespace Zirconium
             }
         }
 
-        public static void PrintScoreList()
+        private static string Renderer()
         {
-            Console.WriteLine("Scoreboard:");
+            StringBuilder result = new StringBuilder();
+            result.AppendLine("Scoreboard:");
             if (TopScoreList.Count > 0)
             {
                 for (int index = 0; index < TopScoreList.Count; index++)
                 {
-                    Console.WriteLine("{0} . {1,-10}  --> {2,2} moves", index + 1, TopScoreList[index].Name, TopScoreList[index].Score);
+                    result.AppendLine(string.Format("{0} . {1,-10}  --> {2,2} moves",
+                        index + 1, TopScoreList[index].Name, TopScoreList[index].Score));
                 }
             }
             else
             {
-                Console.WriteLine("Scoreboard is empty");
+                result.AppendLine("Scoreboard is empty");
             }
+
+            return result.ToString();
+        }
+
+        public static void PrintScoreList()
+        {
+            Console.WriteLine(TopScore.Renderer());
         }
     }
 }

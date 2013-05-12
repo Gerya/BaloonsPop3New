@@ -40,7 +40,15 @@ namespace Zirconium
 
             Console.WriteLine(gameBoard.ToString());
 
-            TopScore.OpenTopScoreList();
+            try
+            {
+                TopScore.OpenTopScoreList();
+            }
+            catch (Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
+            
             
             bool isCoordinates;
             Coordinates coordinates = new Coordinates();
@@ -100,7 +108,16 @@ namespace Zirconium
                 player.Name = Console.ReadLine();
                 TopScore.AddToTopScoreList(player);
             }
-            TopScore.SaveTopScoreList();
+
+            try
+            {
+                TopScore.SaveTopScoreList();
+            }
+            catch (Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
+            
             TopScore.PrintScoreList();
         }
     }
