@@ -95,7 +95,7 @@ namespace Zirconium
                 }
                 else
                 {
-                    Console.WriteLine("Wrong Input!");
+                    Console.WriteLine("Wrong Input! Please enter valid command/coordinates! n/ Col should be in [0-4] range. n/ Row should be in [0-9] range.");
                 }
             }
 

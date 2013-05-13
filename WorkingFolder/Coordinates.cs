@@ -1,10 +1,12 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 
 namespace Zirconium
 {
     internal struct Coordinates
-    { // ala balaaaaaa fdgdgf
+    {
+        private const int MAX_COLS = 9;
+        private const int MAX_ROWS = 4;
+
         private int col;
         private int row;
 
@@ -16,7 +18,7 @@ namespace Zirconium
             }
             set
             {
-                if (value >= 0 && value <= 9)
+                if (value >= 0 && value <= MAX_COLS)
                 {
                     col = value;
                 }
@@ -31,7 +33,7 @@ namespace Zirconium
             }
             set
             {
-                if (value >= 0 && value <= 4)
+                if (value >= 0 && value <= MAX_ROWS)
                 {
                     row = value;
                 }
@@ -46,7 +48,6 @@ namespace Zirconium
             
            if (substrings.Count<string>() != 2)
             {
-            //    Console.WriteLine("Invalid move or command!");
                 return false;
             }
 
@@ -54,19 +55,17 @@ namespace Zirconium
             int row;
             if (int.TryParse(coordinateRow, out row))
             {
-                if (row >= 0 && row <= 4)
+                if (row >= 0 && row <= MAX_ROWS)
                 {
                     result.Row = row;
                 }
                 else
                 {
-                    //Console.WriteLine("Wrong row coordinate");
                     return false;
                 }
             }
             else
             {
-                //Console.WriteLine("Invalid move or command!");
                 return false;
             }
 
@@ -74,19 +73,17 @@ namespace Zirconium
             int col;
             if (int.TryParse(coordinateCol, out col))
             {
-                if (col >= 0 && col <= 9)
+                if (col >= 0 && col <= MAX_COLS)
                 {
                     result.Col = col;
                 }
                 else
                 {
-                    Console.WriteLine("Wrong column coordinate");
                     return false;
                 }
             }
             else
             {
-                Console.WriteLine("Invalid move or command!");
                 return false;
             }
 
