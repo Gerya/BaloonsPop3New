@@ -43,12 +43,12 @@ namespace Zirconium
             char[] separators = { ' ', ',' };
             string[] substrings = input.Split(separators);
             
-            // Double check -> baloons pop
-            //if (substrings.Count<string>() != 2)
-            //{
+            
+           if (substrings.Count<string>() != 2)
+            {
             //    Console.WriteLine("Invalid move or command!");
-            //    return false;
-            //}
+                return false;
+            }
 
             string coordinateRow = substrings[0].Trim();
             int row;
