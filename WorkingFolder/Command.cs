@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Zirconium
 {
-    class Command
+   public class Command
     {
 
         private string command;
